@@ -1,0 +1,34 @@
+
+CREATE TABLE Employee (
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    Department VARCHAR(30),
+    Salary DECIMAL(10,2)
+);
+
+INSERT INTO Employee
+VALUES
+(101, 'Rahul', 'HR', 35000.00),
+(102, 'Priya', 'IT', 45000.00),
+(103, 'Amit', 'Finance', 50000.00);
+
+SELECT* FROM Employee;
+
+ALTER TABLE EMPLOYEE
+ADD EMAIL VARCHAR(50);
+
+ALTER TABLE EMPLOYEE
+ALTER COLUMN EMPNAME TYPE VARCHAR(100);
+
+ALTER TABLE Employee
+DROP COLUMN Email;
+
+TRUNCATE TABLE Employee;
+
+SELECT * FROM Employee;
+
+
+
+
+
+ 

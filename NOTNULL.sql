@@ -1,0 +1,11 @@
+CREATE TABLE Employee (
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50) NOT NULL,
+    Salary DECIMAL(10,2)
+);
+
+INSERT INTO Employee
+VALUES
+(101, 'Rahul', 35000.00);
+
+SELECT * FROM EMPLOYEE;
